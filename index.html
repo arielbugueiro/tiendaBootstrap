@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Tienda con Bootstrap</title>
+</head>
+
+<body>
+    
+
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container" >
+				<a href="#" class="navbar-brand">Menú</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Inicio</a>
+						</li>
+						<!-- Boton Desplegable -->
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+								Productos
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown ">
+								<a href="#computadora" class="dropdown-item ">Computadoras</a>
+								<a href="#computadora" class="dropdown-item ">Laptops</a>
+								<a href="#card__iphone" class="dropdown-item ">Smartphones</a>
+								<a href="#keyboard" class="dropdown-item ">Accesorios</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#contacto" class="nav-link">Contacto</a>
+						</li>
+					</ul>
+
+					<form class="form-inline my-2 my-lg-0" action="">
+						<input type="text" class="form-control mr-sm-2" type="search" placeholder="Buscar">
+						<button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div class="row">
+			<div class="col">
+				<div class="carousel slide" id="slideshow" data-ride="carousel">
+					<!-- Indicadores -->
+					<ol class="carousel-indicators">
+						<li data-target="#slideshow" class="active" data-slide-to="0"></li>
+						<li data-target="#slideshow" data-slide-to="1"></li>
+						<li data-target="#slideshow" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Slides (Imagenes)-->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/s1.jpg" alt="" class="d-block w-100">
+						</div>
+						<div class="carousel-item">
+							<img src="img/s2.jpg" alt="" class="d-block w-100">
+						</div>
+						<div class="carousel-item">
+							<img src="img/s3.jpg" alt="" class="d-block w-100">
+						</div>
+					</div>
+
+					<!-- Controles -->
+					<a href="#slideshow" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a href="#slideshow" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Siguiente</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="py-4 border-bottom">
+					<h1 class="text-center">Galería</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row py-4">
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card" id="card__iphone">
+					<img class="card-img-top" src="img/1.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">iPhone</h3>
+						<p class="card-text">Es una línea de teléfonos inteligentes de alta gama diseñada y comercializada por Apple Inc. Ejecuta el sistema operativo móvil iOS.</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card" id="computadora">
+					<img class="card-img-top" src="img/2.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Mac</h3>
+						<p class="card-text">Línea de computadoras personales diseñada, desarrollada y comercializada por Apple Inc. En definitiva una computadora personal.</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card">
+					<img class="card-img-top" src="img/3.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Canon</h3>
+						<p class="card-text">Las cámaras réflex de Canon ofrecen un rango dinámico amplio que conserva los detalles en las sombras oscuras.</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card">
+					<img class="card-img-top" src="img/4.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Apple Wach</h3>
+						<p class="card-text">Es el primer smartwatch creado por la empresa tecnológica Apple, presentado en 2014 en su Keynote por Tim Cook.</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card" id="keyboard">
+					<img class="card-img-top" src="img/5.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Keyboard</h3>
+						<p class="card-text">Dipositivo de entrada de ordenador capaz de introducir manualmente datos en la memoria del ordenador y controlar el propio ordenador.</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card">
+					<img class="card-img-top" src="img/6.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">iPad</h3>
+						<p class="card-text">Dispositivo de pantalla táctil que se encuentra categorizado como un intermedio entre los teléfonos inteligentes y los computadores .</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card">
+					<img class="card-img-top" src="img/7.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Macbook</h3>
+						<p class="card-text">Es una familia de laptops desarrollados por Apple que tienen como mercado objetivo los usuarios básicos, de hogar y las pequeñas empresas.</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 py-4">
+				<div class="card">
+					<img class="card-img-top" src="img/8.jpg" alt="">
+					<div class="card-body">
+						<h3 class="card-title">Camaras</h3>
+						<p class="card-text">Dispositivo utilizado para capturar imágenes o fotografíasactuales, su uso principal es capturar la imagen que se encuentra en el campo visual.</p>
+						<a href="#" class="btn btn-sm btn-primary">Comprar</a>
+						<a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	
+	<!-- Seccion Contacto -->
+	<section class="contacto" id="contacto">
+	<footer class="container" >
+		<div class="row">
+			<div class="col-12">
+				<div class="py-4 border-top">
+					<h1 class="text-center">Contacto</h1>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+				<div class="social-media">
+					<a href="https://www.facebook.com/bugueiroariel" class="social-icon" target="_blank" title="Perfil de Facebook de Ariel">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://twitter.com/ArielBugueiro1" target="_blank" title="Perfil de Twitter de Ariel" class="social-icon">
+						<i class=" fab fa-twitter"></i>
+					</a>
+					<a href="#" class="social-icon">
+						<i class="fab fa-google"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/ariel-bugueiro/" class="social-icon" target="_blank" title="Perfil de LinkedIn de Ariel">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</div>
+				<p class="py-1 text-center "> © 2021 CopyRight <em>- All rights reserved</em> </p>
+			</div>
+			
+		</footer>
+	</section>
+		<div class="col text-right">
+		<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+			<span class="fa-stack">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+			  </span>
+		</a>
+		</div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/buton.js"></script>
+</body>
+</html>
